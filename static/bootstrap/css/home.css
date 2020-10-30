@@ -1,0 +1,223 @@
+
+                      * {
+                          box-sizing: border-box !important;
+                      }
+
+div.container-fluid {
+}
+.aside{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container-warp{
+    margin-left: 230px;
+}
+div.menuDiv {
+    width: 230px;
+    hight:auto;
+    background: #304156;
+}
+
+div.menuDiv ul.nav li a {
+    text-decoration: none;
+    cursor: pointer;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: rgba(60, 141, 188, 0);
+}
+
+div.menuDiv ul.nav li a:link,
+div.menuDiv ul.nav li a:visited,
+div.menuDiv ul.nav li a:active {
+    background: rgba(1, 1, 1, 0);
+    color: rgba(184, 199, 206, 1);
+}
+
+div.menuDiv ul.nav li a:hover {
+    background: rgba(30, 40, 44, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+div.menuDiv ul.nav .icon-left {
+    padding-right: 5px;
+}
+
+div.menuDiv ul.nav .icon-right {
+    float: right;
+    padding-top: 12px;
+    padding-right: 10px;
+    font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+div.menuDiv .nav-first {
+}
+
+div.menuDiv .nav-first > li {
+}
+div.menuDiv .nav-first .container-fluid >  li > a {
+    line-height: 60px;
+    height: 60px;
+    color: rgba(255, 255, 255, 1);
+}
+div.menuDiv .nav-first > li > a {
+    height: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    margin: 0;
+}
+
+div.menuDiv .nav-first > li.active > a {
+    background: rgba(48,65,86, 1) !important;
+    color: #409eff !important;
+    border-left-color: rgba(60, 141, 188, 1);
+}
+
+div.menuDiv .nav-child {
+    color: #263445 !important;
+    background: #263445 !important
+}
+
+div.menuDiv .nav-child > li {
+}
+
+div.menuDiv .nav-child > li > a {
+    height: 50px;
+    line-height: 50px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 25px;
+    margin: 0;
+}
+
+div.menuDiv .nav-child > li.borderLeft > a {
+    border-left-color: #304156;
+}
+
+div.menuDiv .nav-child > li.active > a {
+    background: rgba(30, 40, 44, 1) !important;
+    color: #409eff !important;
+    border-left-color: rgba(60, 141, 188, 0.6);
+}
+
+.ri-container.is-vertical {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.ri-container.is-vertical, .ri-drawer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+.ri-container {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 0;
+}
+.ri-container, .ri-timeline-item__node {
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+ri-container .ri-header {
+    padding: 0 20px;
+    box-sizing: border-box;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+.ri-header {
+    padding: 0 20px;
+    box-sizing: border-box;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+.ri-aside, .ri-header {
+    -webkit-box-sizing: border-box;
+}
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
+. header {
+    display: block;
+}
+
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #f8f8f8;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+}
+
+.navbar .ri-button {
+    border: none;
+    background-color: inherit;
+}
+.float-wrap {
+    display: block;
+}
+.clearfix:after,
+.float-wrap:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.float-wrap .left {
+    float: left;
+}
+.float-wrap .right {
+    float: right;
+}
+@media screen and (max-width: 800px) {
+    #home .el-col-6 {
+        width: 100%;
+    }
+
+    .float-wrap .right {
+        float: left;
+    }
+
+    .navbar .el-button {
+        padding: 5px 2px;
+    }
+
+    .info-card .el-col-18 {
+        width: 100%;
+    }
+    .ri-breadcrumb {
+        right: 10px;
+    }
+    html, body {
+        overflow: hidden !important;
+        position: fixed !important;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+}
