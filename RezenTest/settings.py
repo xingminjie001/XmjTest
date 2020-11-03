@@ -80,7 +80,7 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hitchhiker_prod',         #数据库名称
+        'NAME': 'RezenTest',         #数据库名称
         'HOST': '192.168.32.14',    #IP
         'PORT': '3306',         #端口
         'USER': 'lc',         #账号
